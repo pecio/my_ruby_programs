@@ -5,4 +5,4 @@ require 'open-uri'
 
 page = open('http://satishtalim.github.com/webruby/chapter3.html')
 
-puts page.readlines.join.split.collect{|word| word == "the"}.size
+puts page.readlines.join.split.select{|word| word == "the"}.size

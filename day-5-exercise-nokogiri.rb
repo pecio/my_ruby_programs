@@ -9,4 +9,4 @@ page = Nokogiri::HTML(open('http://satishtalim.github.com/webruby/chapter3.html'
 # Counting gets more complicated (although also more precise) than
 # in the net/http and open-uri versions.
 # In fact, we get even less "the" occurences than with Hpricot
-puts page.css("body")[0].content.split.collect{|word| word == "the"}.size
+puts page.css("body")[0].content.split.select{|word| word == "the"}.size
