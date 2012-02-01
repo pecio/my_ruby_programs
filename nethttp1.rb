@@ -1,6 +1,7 @@
 require 'net/http'
 
 # It seems we use a non canonical constructor now
+# I have checked in irb and it would have work with URI('url')
 url = URI.parse('http://rubylearning.com/data/text.txt')
 
 Net::HTTP.start(url.host, url.port) do |http|
