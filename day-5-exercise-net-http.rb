@@ -10,4 +10,4 @@ page = Net::HTTP.get(uri) # page should be a (long) string
 
 # Counting the occurences of "the" is not so trivial
 # But it is fun with Ruby
-puts page.split.select{|word| word == "the"}.size
+puts page.scan(/\bthe\b/i).count
