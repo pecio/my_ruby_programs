@@ -3,6 +3,7 @@
 output_command_line = lambda {|env|
   [200,
    {"Content-Type" => "text/plain"},
-   [ARGV.join(' ')]]
+   ["Command line argument you timed was: #{ARGV.join(' ')}"]
+  ]
   }
 puts output_command_line.call({})
