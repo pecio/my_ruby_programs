@@ -19,7 +19,7 @@ class Reverser
     request = Rack::Request.new(env)
     response = Rack::Response.new
 
-    response['Content-Type'] = 'text/html; charset =utf-8'
+    response['Content-Type'] = 'text/html; charset=utf-8'
     response.status          = 200
     response.body            = [ head ]
 
