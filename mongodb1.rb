@@ -1,6 +1,8 @@
 require 'mongo'
-conn = Mongo::Connection.new
-db = conn.db("rubylearning")
+# conn = Mongo::Connection.new
+# db = conn.db("rubylearning")
+db = Mongo::Connection.new('staff.mongohq.com', 10080).db('rubylearning')
+auth = db.authenticate('$$$$', '$$$$$$$$')
 # db.collection_names.each { |name| puts name }
 coll = db.collection("students")
 
