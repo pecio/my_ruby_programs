@@ -24,8 +24,8 @@ fulano = {
 aitor = {
   :firstName => 'Aitor',
   :lastName => 'Tilla',
-  :homePhone => 98765,
-  :mobile => 67543,
+  :homePhone => '98765',
+  :mobile => '67543',
   :email => ['aitor@example.net']
 }
 
@@ -33,14 +33,14 @@ dolores = {
   :firstName => 'Dolores',
   :lastName => 'Fuertes',
   :nickname => 'Pupas',
-  :mobile => 68786,
+  :mobile => '68786',
   :email => ['dolores@example.org', 'fuertesd@example.com']
 }
 
 pilar = {
   :firstName => 'Pilar',
   :lastName => 'Ica',
-  :homePhone => 99988,
+  :homePhone => '99988',
   :birthDate => Time.local(1945, 'may', 31)
 }
 
@@ -48,7 +48,7 @@ andres = {
   :firstName => "Andrés",
   :lastName => 'Trozado',
   :nickname => 'Trozo',
-  :mobile => 66554,
+  :mobile => '66554',
   :email => ['andres.trozado@example.com']
 }
 
