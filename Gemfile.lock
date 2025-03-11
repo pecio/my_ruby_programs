@@ -1,31 +1,38 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    bson (4.3.0)
+    base64 (0.2.0)
+    bson (5.0.2)
     hpricot (0.8.6)
-    mini_portile2 (2.8.6)
-    mongo (2.6.2)
-      bson (>= 4.3.0, < 5.0.0)
-    mustermann (2.0.2)
+    logger (1.6.6)
+    mongo (2.21.0)
+      bson (>= 4.14.1, < 6.0.0)
+    mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
-    nokogiri (1.16.5)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.18.3-x86_64-linux-gnu)
       racc (~> 1.4)
-    parseconfig (1.0.8)
-    racc (1.7.3)
-    rack (2.2.8.1)
-    rack-protection (2.2.3)
-      rack
+    parseconfig (1.1.2)
+    racc (1.8.1)
+    rack (3.1.12)
+    rack-protection (4.1.1)
+      base64 (>= 0.1.0)
+      logger (>= 1.6.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.1.0)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0)
     ruby2_keywords (0.0.5)
-    sinatra (2.2.3)
-      mustermann (~> 2.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.3)
+    sinatra (4.1.1)
+      logger (>= 1.6.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.1.1)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    tilt (2.0.11)
+    tilt (2.6.0)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   hpricot
@@ -34,5 +41,8 @@ DEPENDENCIES
   parseconfig
   sinatra
 
+RUBY VERSION
+   ruby 3.2.0p0
+
 BUNDLED WITH
-   1.16.1
+   2.4.1
