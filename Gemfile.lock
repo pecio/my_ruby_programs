@@ -9,7 +9,7 @@ GEM
       bson (>= 4.14.1, < 6.0.0)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
-    nokogiri (1.18.3-x86_64-linux-gnu)
+    nokogiri (1.18.4-x86_64-linux-gnu)
       racc (~> 1.4)
     parseconfig (1.1.2)
     racc (1.8.1)
